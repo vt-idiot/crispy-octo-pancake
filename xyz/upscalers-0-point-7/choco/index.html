@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hi-Res Fix Upscaler Comparison</title>
+</head>
+<style>
+body {
+	text-align:center;
+	background-color:black;
+	color:white;
+	color-scheme:dark;
+	font-family: Bahnschrift, Roboto, Arial, Helvetica, sans-serif;
+}
+hr {
+    border: none;
+    border-top: 3px double #FFF;
+    color: #FFF;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+hr:after {
+    background: #000;
+	color: white;
+    content: '§';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+.inverted {
+	-webkit-filter: invert(1);
+	filter: invert(1);
+	display: inline-block;
+   }
+.vr{
+	display: inline-block;
+	border-left: 3px solid #ccc;
+	height: 82px;
+    }
+table{
+	table-layout: fixed;
+	width: 110%;
+	border-collapse: collapse;
+	margin-left: -5%;
+	margin-right: -5%;
+	}
+th, td{
+	border: 1px solid gray;
+	border-collapse: collapse;
+	width: 50%;
+	padding: 10px;
+	}
+th{
+	padding-top: 0px !important;
+	padding-bottom: 20px !important;
+	}
+p{
+	margin: 5%;
+</style>
+<body>
+	<h1>Seed</h1>
+	<h2><a href="./3837032376/compare.html" target="_self">3837032376</a></h2>
+	<h2><a href="./3837032377/compare.html" target="_self">3837032377</a></h2>
+	<h2><a href="./3837032378/compare.html" target="_self">3837032378</a></h2>
+	<h2><a href="./3837032379/compare.html" target="_self">3837032379</a></h2>
+	<h2><a href="./3837032380/compare.html" target="_self">3837032380</a></h2>
+	<h2><a href="./3837032381/compare.html" target="_self">3837032381</a></h2>
+	<h2><a href="./3837032382/compare.html" target="_self">3837032382</a></h2>
+	<h2><a href="./3837032383/compare.html" target="_self">3837032383</a></h2>
+	<h3>Prompt</h3>
+	<p>Steps: 28, Sampler: DPM++ 2S a Karras, CFG scale: 11, Seed: 3837032376, Size: 512x768, Denoising strength: 0.7, Clip skip: 2, ENSD: 31337, Hires upscale: 1.5, Hires upscaler: Latent, Script: X/Y/Z plot, X Type: Hires upscaler, X Values: "Latent, Latent (antialiased), Latent (bicubic), Latent (bicubic antialiased), Latent (nearest), Latent (nearest-exact), None, Lanczos, Nearest, 4x-AnimeSharp, 4x-UltraMix_Balanced, 4x-UltraMix_Smooth, lollypop, R-ESRGAN 4x+, R-ESRGAN 4x+ Anime6B, LDSR, ScuNET GAN, ScuNET PSNR, SwinIR 4x", Y Type: Seed, Y Values: 3837032376-3837032383, Fixed Y Values: "3837032376, 3837032377, 3837032378, 3837032379, 3837032380, 3837032381, 3837032382, 3837032383"</p>
+	<h4>Full Grid Download <a href="./xyz_grid-0000-3837032376.crushed.png.big" download="xyz_grid-0000-3837032376.png">170 MB</a></h4>
+</body>
+</html>
