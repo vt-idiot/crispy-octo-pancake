@@ -9,9 +9,10 @@ body {
 	display: grid;
 	grid-template: 5% auto / 100%;
 	font-family:'HelveticaNeueu', Helvetica, Tahoma, sans-serif;
-
 	height: 100vh;
 	align-content: center;
+	justify-items: center;
+	background: black;
 }
 
 /*---------------------------------------------------------*/
@@ -84,12 +85,12 @@ body {
 }
 
 .imageryLayersTabs > * {
-	/*flex: 0 1 auto;*/
-	/*align-self: center;*/
-	/*margin: auto 1%;*/
-	margin: 10% 0%;
-	/*padding-top: 1%;*/
-	/*padding-bottom: 1%;*/
+	flex: 0 1 auto;
+	align-self: center;
+	margin: auto 1%;
+	/* margin: 10% 0%; */
+	/* padding-top: 1%; */
+	/* padding-bottom: 1%; */
 }
 
 .tabContainer {
@@ -118,7 +119,7 @@ body {
 }
 
 .tabContainer label {
-	padding: 8px 6px;
+	padding: 0;
 	cursor: pointer;
 }
 
@@ -138,11 +139,19 @@ body {
 .img-container{
     position: relative;
     overflow: hidden;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
 }
  
 .img-container img {
-    width: 100%;
-    display: block;
+    width: auto !important;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
  
 .img-top {
