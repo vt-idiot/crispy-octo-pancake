@@ -9,10 +9,11 @@ body {
 	display: grid;
 	grid-template: 5% auto / 100%;
 	font-family:'HelveticaNeueu', Helvetica, Tahoma, sans-serif;
-	height: 100vh;
+	height: 100%;
 	align-content: center;
 	justify-items: center;
 	background: black;
+	color: white;
 }
 
 /*---------------------------------------------------------*/
@@ -59,14 +60,23 @@ body {
 .container {
 	grid-row: 2;
 	grid-column: 1;
+	display: grid;
 }
 
 .tabColumn {
-	position: absolute;
-	/*top: 5%;*/
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	white-space: nowrap;
+	margin: 0;
+	justify-content: center;
 	z-index: 2;
 	background-color: #9898989c;
-	padding: 10px 8px;
+	padding: 2px 2px;
+	display: grid;
+	align-content: center;
+	flex-wrap: wrap;
+	position: absolute;
 }
 
 #leftTabs {
@@ -78,10 +88,10 @@ body {
 }
 
 .imageryLayersTabs {
-	display: flex;
+	display: grid;
 	flex-direction: column;
 	width: 100%;
-	/*justify-content: end;*/
+	justify-content: end;
 }
 
 .imageryLayersTabs > * {
@@ -99,9 +109,9 @@ body {
 
 .tabContainer > * {
 	background-color: #242424;
-	font-size: 2.5vmin;
+	font-size: 12px;
 	letter-spacing: 1px;
-	/*text-align: center;*/
+	text-align: center;
 	color: #fffbde;
 }
 
@@ -228,7 +238,7 @@ body {
 	}
 
 	.tabContainer > * {
-		font-size: 2.5vmin;
+		font-size: 1.5vmin;
 	}
 }
 
