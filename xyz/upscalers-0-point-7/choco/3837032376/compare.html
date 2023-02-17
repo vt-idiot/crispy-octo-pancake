@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Porto, Portugal</title>
+	<link rel="stylesheet" type="text/css" href="compare.css">
+	<script src="compare.js"></script>
+</head>
+<body>
+  <!-- Title header information -->
+  <div class="header-bar">
+  	<div class="subject">
+  		<h2 class="subtitle">Hi-Res Fix Upscaler Comparison</h2>
+  	</div>
+  	<div class="country-title">
+  		<h1 class="title-text">0.7 Denoising Strength</h1>
+  	</div>
+  </div>
+
+  <!-- Left and Right Image containers -->
+  <div class="container">
+  	<!-- Imagery name  -->
+  	<div id="leftTabs" class="tabColumn">
+  		<div id="leftTabTitle" class="sideTabTitle">left</div>
+  		<div id="leftLayersList" class="imageryLayersTabs tabContainer"></div>
+  	</div>
+
+  	<div id="rightTabs" class="tabColumn">
+  		<div id="rightTabTitle" class="sideTabTitle">right</div>
+  		<div id="rightLayersList" class="imageryLayersTabs tabContainer"></div>
+  	</div>
+
+  	<!-- Image slider -->
+  	<div id="sliderbox" class="img-container">
+  		<!-- Right Image -->
+  		<img class="fitcenter" id="img_right" src="19-SwinIR_4x.png">
+  		<!-- Left image -->
+  		<div class="imgholder img-top">
+  			<img class="fitcenter" id="img_left" src="01-Latent.png">
+  		</div>
+  		<span class="handle"></span>
+  	</div>
+
+  </div>
+
+</body>
+</html>
